@@ -1,0 +1,188 @@
+#quem-somos {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #00250D;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, #011309 96.55%, rgba(1, 19, 9, 0) 5.55%),
+        linear-gradient(-90deg, #011309 96.55%, rgba(1, 19, 9, 0) 5.55%);
+}
+
+#quem-somos .fundo-arco {
+    display: none;
+    max-width: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#quem-somos .titulo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#quem-somos .titulo>strong {
+    font-weight: 600;
+}
+
+#quem-somos .container .cards .card {
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#quem-somos .container .cards .card:first-child {
+    margin-bottom: 18px;
+}
+
+#quem-somos .container .cards .card .foto-cargo {
+    width: 100%;
+}
+
+#quem-somos .container .cards .card .card-content {
+    padding: 24px;
+}
+
+#quem-somos .container .cards .card .card-content {
+    color: #FFFFFF;
+}
+
+#quem-somos .container .cards .card .card-content .nome {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+#quem-somos .container .cards .card .card-content .placa-cargo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #03140B;
+    background: linear-gradient(90deg, #f8e7b9, #d7b975);
+    padding: 14px 60px;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    max-width: 190px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+
+#quem-somos .container .cards .card .card-content .placa-cargo::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 50px;
+    border: 2px solid black;
+    pointer-events: none;
+}
+
+#quem-somos .container .cards .card .card-content .descricao {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+@media(min-width:768px) {
+    #quem-somos .container {
+        position: relative;
+    }
+
+    #quem-somos .container .cards {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    #quem-somos .fundo-arco {
+        position: absolute;
+        width: 100%;
+        display: block;
+        z-index: 0;
+    }
+
+    #quem-somos .container .cards .card {
+        max-width: 555px;
+        width: 50%;
+    }
+
+    #quem-somos .container .cards .card:first-child {
+        margin-bottom: 0;
+    }
+
+    #quem-somos .container .cards .card .foto-cargo {
+        height: 320px;
+    }
+}
+
+@media(min-width:960px) {
+    #quem-somos .titulo {
+        margin-bottom: 48px;
+    }
+
+    #quem-somos .fundo-arco {
+        top: -240px;
+    }
+
+    #quem-somos .container .cards {
+        gap: 24px;
+    }
+
+    #quem-somos .container .cards .card .foto-cargo {
+        height: 400px;
+    }
+}
+
+@media(min-width:1024px) {
+    #quem-somos {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #quem-somos .fundo-arco {
+        top: -290px;
+    }
+
+    #quem-somos .container .cards {
+        gap: 48px;
+    }
+
+    #quem-somos .container .cards .card .card-content {
+        padding: 48px;
+    }
+
+    #quem-somos .container .cards .card {
+        max-width: 480px;
+    }
+
+    #quem-somos .container .cards .card .foto-cargo {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #quem-somos {
+        padding-top: 96px;
+        padding-bottom: 200px;
+    }
+
+    #quem-somos .container .cards {
+        gap: 96px;
+    }
+
+    #quem-somos .container .cards .card .foto-cargo {
+        height: 500px;
+    }
+}
