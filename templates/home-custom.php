@@ -6,6 +6,7 @@ Template Name: Página Home
 ?>
     <?php
         get_template_part('template-parts/home/onde-atuamos', 'onde-atuamos');
+        get_template_part('template-parts/home/faq', 'faq');
     ?>
 <?php
     get_footer();

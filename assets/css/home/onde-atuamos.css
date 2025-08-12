@@ -43,20 +43,26 @@
 
 #onde-atuamos .container .conteudo .imagem-logo {
     margin-bottom: 8px;
+    width: 130px;
 }
 
 #onde-atuamos .container .conteudo .titulo {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 8px;
 }
 
 #onde-atuamos .container .conteudo .sub-texto {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 @media (min-width: 960px) {
+    #onde-atuamos {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
     #onde-atuamos .elipse {
         width: 50%;
         height: 100%;
@@ -89,12 +95,18 @@
 }
 
 @media (min-width:1024px) {
+    #onde-atuamos {
+        padding-top: 98px;
+        padding-bottom: 98px;
+    }
+
     #onde-atuamos .container picture {
         margin-right: 98px;
     }
 
     #onde-atuamos .container .conteudo .imagem-logo {
         margin-bottom: 28px;
+        width: unset;
     }
 
     #onde-atuamos .container .conteudo .titulo {
@@ -106,7 +118,7 @@
         font-size: 32px;
     }
 
-    .elipse {
+    #onde-atuamos .elipse {
         top: 0;
         left: 50%;
         transform: translate(-50%);
