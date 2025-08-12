@@ -1,0 +1,114 @@
+#onde-atuamos {
+    background-color: #00250D;
+    padding-top: 32px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 32px;
+}
+
+#onde-atuamos .elipse {
+    background: #00DA3C;
+    mix-blend-mode: exclusion;
+    opacity: 0.35;
+    filter: blur(316.765px);
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#onde-atuamos .brasil-svg {
+    position: absolute;
+    height: 50%;
+    right: 0;
+}
+
+#onde-atuamos .container {
+    position: relative;
+}
+
+#onde-atuamos .container .imagem-lateral {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 440px;
+}
+
+#onde-atuamos .container .conteudo {
+    margin: 0 auto;
+    margin-top: 24px;
+    color: #F2F2F2;
+}
+
+#onde-atuamos .container .conteudo .imagem-logo {
+    margin-bottom: 8px;
+}
+
+#onde-atuamos .container .conteudo .titulo {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+#onde-atuamos .container .conteudo .sub-texto {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media (min-width: 960px) {
+    #onde-atuamos .elipse {
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #onde-atuamos .brasil-svg {
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    #onde-atuamos .container {
+        display: flex;
+        align-items: center;
+    }
+
+    #onde-atuamos .container picture {
+        max-width: 580px;
+        margin-right: 28px;
+        min-width: 350px;
+    }
+
+    #onde-atuamos .container .conteudo {
+        max-width: 560px;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    #onde-atuamos .container picture {
+        margin-right: 98px;
+    }
+
+    #onde-atuamos .container .conteudo .imagem-logo {
+        margin-bottom: 28px;
+    }
+
+    #onde-atuamos .container .conteudo .titulo {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    #onde-atuamos .container .conteudo .sub-texto {
+        font-size: 32px;
+    }
+
+    .elipse {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
