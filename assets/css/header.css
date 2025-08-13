@@ -1,0 +1,161 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(26.6px);
+    z-index: 9999;
+    padding: 24px 0;
+}
+
+.header .nav-desktop{
+    display: none;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .btn-hamburguer span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+.header .nav-mobile{
+    position: absolute;
+    right: -1000px;
+    background-color: #00250D;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 99999999;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+
+.header .nav-mobile .btn-close{
+    color: #D5C28C;
+    font-size: 24px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.nav-mobile.show{
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+/* .header .nav-mobile .menu-header-container #menu-header{
+    padding-top: 100px;
+} */
+
+.header .nav-mobile img{
+    padding-top: 100px;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 24px;
+}
+
+.header .placa-cargo{
+    font-size: 16px;
+    font-weight: bold;
+    color: #03140B;
+    background: linear-gradient(90deg, #f8e7b9, #d7b975);
+    padding: 14px 60px;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 50px;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.header .placa-cargo img{
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.header .placa-cargo::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 50px;
+    border: 2px solid black;
+    pointer-events: none;
+}
+
+.header .menu-header-container #menu-header .menu-item{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.header .menu-header-container #menu-header .menu-item  a,.header .menu-header-container #menu-header-1 .menu-item  a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+@media(min-width:960px){
+    .header{
+        padding: 12px 0;
+    }
+    .header .nav-mobile{
+        display: none;
+    }
+
+    .header .container .btn-hamburguer{
+        display: none;
+    }
+    
+    .header .container .logo-mobile{
+        display: none;
+    }
+
+    .header .container .nav-desktop{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .header .menu-header-container #menu-header-1  {
+        display: flex;
+        gap: 24px;
+    }
+
+    .header .placa-cargo{
+        max-width: 223px;
+        height: 38px;
+        margin: 0;
+        padding: 0 30px;
+    }
+}
+
+@media(min-width:1200px){
+    .header .menu-header-container #menu-header-1{
+        gap: 58px;
+    }
+}

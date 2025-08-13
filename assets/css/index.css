@@ -147,6 +147,13 @@ video {
     box-sizing: border-box;
 }
 
+#wpadminbar{
+    display: none!important;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

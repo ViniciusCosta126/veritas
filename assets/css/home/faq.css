@@ -182,6 +182,7 @@
         font-size: 18px;
         padding-top: 32px;
         padding-bottom: 32px;
+        max-width: unset;
     }
 
     #faq .container .container-faq .container-pergunta .resposta {
@@ -193,7 +194,7 @@
     }
 
     #faq .container .container-faq .container-pergunta .btn-abrir {
-        right: -84px;
+        right: 20px;
     }
 }
 

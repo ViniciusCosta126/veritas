@@ -3,7 +3,7 @@
 function styles_enqueue()
 {
     wp_enqueue_style("css-global", get_template_directory_uri() . "/assets/css/index.css", array(), '1.0.0');
-
+    wp_enqueue_style("header-global", get_template_directory_uri() . "/assets/css/header.css", array(), '1.0.0');
 
     wp_enqueue_style("onde-atuamos", get_template_directory_uri() . "/assets/css/home/onde-atuamos.css", array(), '1.0.0');
     wp_enqueue_style("faq", get_template_directory_uri() . "/assets/css/home/faq.css", array(), '1.0.0');
