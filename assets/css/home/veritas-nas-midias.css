@@ -1,0 +1,39 @@
+#veritas-nas-midias {
+    padding-bottom: 32px;
+    background: url('../../../images/fundo-midia.png');
+    background-size: cover;
+    /* preenche o espaço mantendo a proporção */
+    background-position: center center;
+}
+
+#veritas-nas-midias img{
+    width: 100%;
+    display: block;
+    max-width: 500px;
+}
+
+#veritas-nas-midias iframe{
+    width: 100%;
+    display: block;
+    max-width: 1156px;
+    height: 650px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+@media(min-width:960px) {
+    #veritas-nas-midias {
+        padding-bottom: 98px;
+
+    }
+
+    #veritas-nas-midias img{
+        margin: 0 auto;
+    }
+
+    #veritas-nas-midias iframe{
+        margin: 0 auto;
+        margin-top: -60px;
+    }
+}

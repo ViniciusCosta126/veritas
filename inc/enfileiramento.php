@@ -9,6 +9,7 @@ function styles_enqueue()
     wp_enqueue_style("onde-atuamos", get_template_directory_uri() . "/assets/css/home/onde-atuamos.css", array(), '1.0.0');
     wp_enqueue_style("faq", get_template_directory_uri() . "/assets/css/home/faq.css", array(), '1.0.0');
     wp_enqueue_style("quem-somos", get_template_directory_uri() . "/assets/css/home/quem-somos.css", array(), '1.0.0');
+    wp_enqueue_style("veritas-midias", get_template_directory_uri() . "/assets/css/home/veritas-nas-midias.css", array(), '1.0.0');
 }
 add_action('wp_enqueue_scripts', 'styles_enqueue');
 
