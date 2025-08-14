@@ -8,6 +8,8 @@
 }
 
 #jornada .container iframe {
+    margin: 0 auto;
+    display: block;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -139,6 +141,7 @@
     }
 
     #jornada .container iframe{
+
         min-height: 650px;
         max-height: 650px;
     }

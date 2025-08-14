@@ -1,0 +1,98 @@
+#blog-section {
+  padding: 40px 0;
+  background: linear-gradient(180deg, #02180B, #002b15);
+  color: #fff;
+}
+
+#blog-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.blog-featured {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #000;
+}
+
+.blog-featured img {
+  width: 100%;
+  display: block;
+}
+
+.blog-featured .blog-content {
+  padding: 20px;
+}
+
+.blog-featured h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #003a20;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.blog-card .blog-image{
+    display: block;
+    width: 140px;
+    height: 90px;
+}
+
+.blog-card .blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-card h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.blog-card .btn,
+.blog-featured .btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========================
+   DESKTOP (>= 992px)
+======================== */
+@media (min-width: 992px) {
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* destaque + sidebar */
+    gap: 30px;
+    align-items: start;
+  }
+
+  .blog-side {
+    justify-content: space-between;
+    height: 100%;
+  }
+
+}
